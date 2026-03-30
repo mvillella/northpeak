@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"","children":[{"content":"NorthPeak SCM Portfolio | ARR  ~&#x24;2.5M  | RCT ~6M","children":[{"content":"SAP SCM scope","children":[{"content":"ERP / Operational","children":[{"content":"Materials Management","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Production Planning","children":[],"payload":{"tag":"li","lines":"6,7"}}],"payload":{"tag":"h5","lines":"4,5"}},{"content":"IBP / Planning","children":[{"content":"Demand Planning","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Supply Planning","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Inventory Optimization","children":[],"payload":{"tag":"li","lines":"10,11"}}],"payload":{"tag":"h5","lines":"7,8"}}],"payload":{"tag":"h4","lines":"2,3"}},{"content":"Account Health:","children":[{"content":"Overall  trending yellow","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Renewal risk is increasing","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"Renewal window approaching","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Value realization discussions have remained operational, not strategic","children":[],"payload":{"tag":"li","lines":"15,16"}}],"payload":{"tag":"h4","lines":"11,12"}},{"content":"From CSM reviews and tooling:","children":[{"content":"IBP user activity (logins, jobs, cycles): green","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"Core planning processes: partially adopted, inconsistent by plant","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"Inventory KPIs: missed targets for two consecutive quarters","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Forecast accuracy: flat, below the original business case assumptions","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h4","lines":"16,17"}}],"payload":{"tag":"h3","lines":"0,1"}},{"content":"Original Supply Chain Objectives (C-Level)","children":[{"content":"<strong>Reduce</strong> <mark>excess and obsolete inventory</mark> by 15%[^1]","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>Improve ==forecast</strong> accuracy== across <mark>core product families</mark>[^2]","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"<mark><strong>Standardize</strong> planning processes</mark> across <mark>plants and regions</mark> [^3]","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Increase supply chain resilience during disruptions","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"25,26"}},{"content":"Current State: What You&#x2019;re Seeing","children":[{"content":"Customer Engagement","children":[{"content":"Ops (day-to-day):","children":[{"content":"<strong>Director of Supply Chain Operations</strong> &#x2013; highly engaged, knowledgeable, and supportive","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"<strong>IT Program Manager</strong> &#x2013; responsible for IBP configuration, integrations, and technical delivery","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"They attend cadence calls, complete action items, and generally <mark style=\"background: #BBFABBA6;\">view SAP positively</mark>.","children":[],"payload":{"tag":"li","lines":"42,43"}}],"payload":{"tag":"h5","lines":"38,39"}},{"content":"Executive (monthly / spot)","children":[{"content":"Declined Over Time, Actually Non-Existent","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Discouraged by Goals / Expectations not being met?","children":[],"payload":{"tag":"li","lines":"45,46"}}],"payload":{"tag":"h5","lines":"43,44"}}],"payload":{"tag":"h4","lines":"36,37"}},{"content":"Signs of Advocacy Erosion:","children":[{"content":"&#x201c;IBP is technically live, but <strong>planning behaviors haven&#x2019;t</strong> changed.&#x201d;","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"&#x201c;Each plant still <strong>plans differently</strong>.&#x201d;","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"&#x201c;We don&#x2019;t have the <strong>authority to force</strong> standardization.&#x201d;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"&#x201c;Inventory Optimization is technically live, but planners don&#x2019;t <strong>understand or trust</strong> the results&#x201d;","children":[],"payload":{"tag":"li","lines":"51,52"}}],"payload":{"tag":"h4","lines":"46,47"}}],"payload":{"tag":"h3","lines":"34,35"}},{"content":"What I&apos;ve learned","children":[{"content":"Indirectly:","children":[{"content":"The CIO is <mark style=\"background: #FFB86CA6;\">focused on IT cost optimization</mark> and simplification","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"The VP of Operations is prioritizing short&#x2011;term plant performance and disruption management","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"Finance has questioned whether the original inventory reduction targets are realistic","children":[],"payload":{"tag":"li","lines":"58,59"}}],"payload":{"tag":"h4","lines":"54,55"}},{"content":"There has been <mark style=\"background: #FF5582A6;\">no c&#x2011;level discussion connecting IBP adoption</mark> to:","children":[{"content":"\n<p data-lines=\"61,62\">Decision&#x2011;making authority (&#x201c;Who has the final say on the plan?&#x201d;)</p>","children":[{"content":"Signal 1 No exec discussion = <strong>no clear owner of the plan</strong>","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"Signal 2 Plants / functions override each other","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"Outcome for CSM: &quot;IBP is not the <strong>system of decision</strong>&quot;","children":[],"payload":{"tag":"li","lines":"64,65"}}],"payload":{"tag":"li","lines":"61,65"}},{"content":"\n<p data-lines=\"65,66\">Process standardization (&#x201c;Are all plants following the same planning logic?&#x201d;)</p>","children":[{"content":"Signal 1 No exec push = <strong>no enforcement</strong>","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"","children":[{"content":"Signal 2 Each plant does its own thing","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"Goal / Expectation not fulfilled: No standardization, <strong>no scalability of value</strong> (but here i have a say, i don&apos;t think this is on the system level, if they are not planning with standard processes they will not do it in SAP, in Excel or in Python and R )","children":[],"payload":{"tag":"li","lines":"68,69"}}],"payload":{"tag":"ul","lines":"67,69"}}],"payload":{"tag":"li","lines":"65,69"}},{"content":"\n<p data-lines=\"69,70\">Tradeoffs between cost, service, and resilience (&quot;Who decides what we optimize for?&quot;)</p>","children":[{"content":"No discussion = <strong>no explicit trade-offs</strong>","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"","children":[{"content":"Everyone optimizes locally:[^5]","children":[{"content":"Supply &#x2192; efficiency / &quot;machines fully operative&quot;","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"Sales &#x2192; service / &quot;no backorders please&quot;","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"Finance &#x2192; cost / &quot;I need money&quot;","children":[],"payload":{"tag":"li","lines":"74,75"}}],"payload":{"tag":"li","lines":"71,75"}},{"content":"IBP outputs are not used to <strong>drive business decisions</strong> (so we can say that adoption breaks) &quot;The Broken Adoption Supply Chain&quot; (a few holes here and there)","children":[],"payload":{"tag":"li","lines":"75,77"}}],"payload":{"tag":"ul","lines":"71,77"}}],"payload":{"tag":"li","lines":"69,77"}},{"content":"\n<p data-lines=\"77,78\">Value realized &amp; continued investment in the program[^4]</p>","children":[],"payload":{"tag":"li","lines":"77,79"}}],"payload":{"tag":"h4","lines":"59,60"}}],"payload":{"tag":"h3","lines":"52,53"}},{"content":"Internal SAP Context","children":[{"content":"The Account Executive is focused on net&#x2011;new pipeline and has limited capacity for renewal strategy","children":[],"payload":{"tag":"li","lines":"81,82"}},{"content":"Consulting and Services engagements have concluded","children":[],"payload":{"tag":"li","lines":"82,83"}},{"content":"No formal executive governance cadence is in place","children":[],"payload":{"tag":"li","lines":"83,84"}},{"content":"CSM engagement has centered on adoption metrics and operational reviews in a monthly cadence with primary contacts.","children":[],"payload":{"tag":"li","lines":"84,86"}}],"payload":{"tag":"h3","lines":"79,80"}}]},null)</script>
+</body>
+</html>
